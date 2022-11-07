@@ -33,7 +33,7 @@ export default function FormPage() {
          Artist Name:   <input onChange={fillForm} name='artistName' type="text"/>
          Cover Image Url:   <input onChange={fillForm} name='songName' type="text"/>
          GuitarTab Url:   <input onChange={fillForm} name='tabLink' type="text"/>
-         <input type="submit" />
+         <input type="submit"/>
         </form>
     </div>
   )
