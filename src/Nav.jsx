@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <>
     <ul>
-        <li className='text-3xl'>
+        <li className='text-3xl flex flex-col lg:flex-row'>
             <Link className='px-32' to={"/"}>Home</Link>
             <Link className='px-32' to={"/SongList"}>SongList</Link>
             <Link className='px-32' to={"/About"}>About</Link>

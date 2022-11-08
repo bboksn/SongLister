@@ -33,7 +33,7 @@ export default function FormPage() {
          Artist Name:   <input className='border-2 border-black border-dashed mb-7' onChange={fillForm} name='artistName' type="text"/>
          Song Name:   <input className='border-2 border-black border-dashed mb-7' onChange={fillForm} name='songName' type="text"/>
          GuitarTab/Youtube Url:   <input className='border-2 border-black border-dashed mb-7' onChange={fillForm} name='tabLink' type="text"/>
-         <button className='text-3xl border-black border-4 w-[10%] self-center rounded-xl font-serif' type='submit'>Enter</button>
+         <button className='lg:text-3xl border-black border-4 w-[10%] self-center rounded-xl font-serif' type='submit'>Enter</button>
         </form>
     </div>
   )
