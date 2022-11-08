@@ -11,8 +11,14 @@
       "coverUrl": "https://imgs.search.brave.com/aXyqbxX2aqws697Gjyf6TiXPzsjlzq7NOJJGBXQp434/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly82NC5t/ZWRpYS50dW1ibHIu/Y29tLzE3ZjBlZjU0/MmMwNDU2NjZkYmEz/OGQwNmVhZTM4ODI5/LzJkNmZlOGRmNWI2/ODMwZWUtOTUvczEy/ODB4MTkyMC9hNTU5/OWFjOTJmMWJmNmE5/Zjg5Zjc0YmVjNzBk/MzhhZGE5MjVlMDE5/LmpwZw",
       "artistName": "Sweet Trip",
       "songName": "Dsco",
-      "tabLink": "n/a",
+      "tabLink": "https://www.youtube.com/watch?v=CjAk_ut6nW0",
       "id": 10
+    },
+    {
+      "artistName": "Nirvana",
+      "songName": "Dumb",
+      "tabLink": "https://tabs.ultimate-guitar.com/tab/nirvana/dumb-tabs-108091",
+      "id": 11
     }
   ]
 }

@@ -28,12 +28,12 @@ export default function FormPage() {
         
   return (
     <div>
-        <form onSubmit={handleForm}>
-         Cover Image Url:   <input onChange={fillForm} name='coverUrl' type="text"/>
-         Artist Name:   <input onChange={fillForm} name='artistName' type="text"/>
-         Cover Image Url:   <input onChange={fillForm} name='songName' type="text"/>
-         GuitarTab Url:   <input onChange={fillForm} name='tabLink' type="text"/>
-         <input type="submit"/>
+        <form className='flex flex-col border-2' onSubmit={handleForm}>
+         Cover Image Url: <input className='border-2 border-black border-dashed mb-7' onChange={fillForm} name='coverUrl' type="text"/>
+         Artist Name:   <input className='border-2 border-black border-dashed mb-7' onChange={fillForm} name='artistName' type="text"/>
+         Song Name:   <input className='border-2 border-black border-dashed mb-7' onChange={fillForm} name='songName' type="text"/>
+         GuitarTab/Youtube Url:   <input className='border-2 border-black border-dashed mb-7' onChange={fillForm} name='tabLink' type="text"/>
+         <button className='text-3xl border-black border-4 w-[10%] self-center rounded-xl font-serif' type='submit'>Enter</button>
         </form>
     </div>
   )
