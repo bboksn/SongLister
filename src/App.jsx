@@ -9,8 +9,8 @@ export default function App() {
     <>
     <Nav></Nav>
     <Routes>
-      <Route path='/' element={<FormPage/>}/>
-      <Route path='Songlist' element={<Cardspage/>}/>
+    <Route path='/' element={<Cardspage/>}/>
+      <Route path='NewSong' element={<FormPage/>}/>
       <Route path='About' element={<About/>}/>
     </Routes>
     </>
