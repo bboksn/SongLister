@@ -1,5 +1,5 @@
 import {React,useState} from 'react'
-
+import { useNavigate } from 'react-router-dom';
 export default function FormPage() {
    // const [formData,setFormData] = useState({});
     const [i1,setI1] = useState("");
@@ -7,6 +7,7 @@ export default function FormPage() {
     const [i3,setI3] = useState("");
     const [i4,setI4] = useState("");
     const setters = [setI1,setI2,setI3,setI4]
+    const navigate = useNavigate();
 //old form submission with less state values but harder to clear form to give visuial feedback of submission
    /* function fillForm(e){
         e.preventDefault();
@@ -51,6 +52,7 @@ export default function FormPage() {
               setters.forEach(e => {
                 e("")
               });
+              navigate("/songs")
             })
     }
   return (
