@@ -1,9 +1,8 @@
 import {React,useState} from 'react'
 import { useNavigate } from 'react-router-dom';
-export default function FormPage() {
+export default function FormPage({cards,setCards}) {
     const [formData,setFormData] = useState({});
     const navigate = useNavigate();
-//old form submission with less state values but harder to clear form to give visuial feedback of submission
     function fillForm(e){
         e.preventDefault();
         setFormData({
@@ -24,7 +23,9 @@ export default function FormPage() {
             .then((response) => response.json())
             .then((data) => {
               console.log('Success:', data);
-              navigate("/songs")
+              // Change cards state
+              setCards([...cards,data])
+             // navigate("/songs")
             })
     }
   return (

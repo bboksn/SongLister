@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 import {Routes,Route} from 'react-router-dom'
 import Nav from './Nav'
 import FormPage from './FormPage'
@@ -6,6 +6,14 @@ import Cardspage from './Cardspage'
 import About from './About'
 export default function App() {
   const [cards,setCards] = useState([{coverUrl:"",artistName:"",songName:"",tabLink:"",id:0}]);
+  useEffect(() => {
+    fetch('http://localhost:3001/cards')
+    .then((response) => response.json())
+    .then(e=>{
+        console.log('success :)',e)
+        setCards(e)
+    })
+}, [])
   return (
     <>
     <Nav></Nav>
@@ -13,7 +21,7 @@ export default function App() {
       
       <Route path='/' element={<Cardspage cards={cards} setCards={setCards}/>}/>
       <Route path='songs' element={<Cardspage cards={cards} setCards={setCards}/>}/>
-      <Route path='songs/new' element={<FormPage/>}/>
+      <Route path='songs/new' element={<FormPage cards={cards} setCards={setCards}/>}/>
       <Route path='About' element={<About/>}/>
       
     
