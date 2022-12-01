@@ -1,4 +1,4 @@
-import {React,useEffect} from 'react'
+import {React} from 'react'
 import Card from './Card'
 
 export default function Cardspage({cards}) {
